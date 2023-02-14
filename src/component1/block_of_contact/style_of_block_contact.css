@@ -1,0 +1,14 @@
+.card_container{
+    display: flex;
+    padding: 10px 10px 0 10px ;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(206, 239, 252);
+    border: 2px solid rgb(0, 0, 0);
+}
+.info_number{
+    color: grey;
+    margin-top:-8px ;
+    font-weight: 700;
+}
