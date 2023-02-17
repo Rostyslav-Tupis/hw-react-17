@@ -21,10 +21,10 @@ function Contacts(){
                 }) 
             }) 
             if(!stateFemale){   //коли stateFemale = false тоді пушаться в масив лише чоловіки
-                filterContacts = filterContacts.filter((elem)=> elem.gender === "male")                
+                filterContacts = filterContacts.filter((elem)=> elem.gender === "male" || !elem.gender)                
             }
             if(!stateMale){
-                filterContacts = filterContacts.filter((elem)=> elem.gender === "female")
+                filterContacts = filterContacts.filter((elem)=> elem.gender === "female" || !elem.gender)
             }
             setContact(filterContacts)
     },[search , stateMale , stateFemale])
